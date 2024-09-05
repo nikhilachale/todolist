@@ -1,0 +1,96 @@
+body {
+    height: 100vh;
+    background: #16423C ;/* Light Beige background */
+    font-family: 'Poppins', sans-serif;
+    color: #9C9583; /* Warm Gray text color */
+}
+
+.container {
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    background-color: #6A9C89; /* Pale Green for container background */
+    top: 150px;
+    padding: 30px 40px;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+ul {
+    list-style: none;
+    padding: 20px;
+}
+
+li {
+    border: none;
+    padding: 15px;
+    border-radius: 1rem;
+    width: 100%;
+    background-color: #C4DAD2; /* Light Gray for list items */
+    color: #018f5b; /* Warm Gray text color for contrast */
+    margin-bottom: 1.3rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+.addtask input {
+    width: 30rem;
+    height: 5rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #E9EFEC; /* Soft Gray for input background */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    color: #013a1d; /* Warm Gray text color */
+}
+
+.addtask button {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    background-color: #018f5b; /* Warm Gray for button */
+    color: #ffffff; /* Light Beige for button text */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.addtask button:hover {
+    background-color: #cff8e3; /* Soft Gray on hover */
+    color: #16423C;
+}
+
+.addtask input:focus {
+    outline: none;
+    border-color: #CADBC8; /* Pale Green for input focus */
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+        top: 100px;
+        padding: 1.5rem;
+    }
+
+    .addtask input {
+        width: calc(100% - 5.5rem);
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+
+    .addtask button {
+        width: 4rem;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+
+    li {
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+    }
+}
