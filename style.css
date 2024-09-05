@@ -1,8 +1,8 @@
 body {
     height: 100vh;
-    background: #16423C ;/* Light Beige background */
+    background: #16423C;
     font-family: 'Poppins', sans-serif;
-    color: #9C9583; /* Warm Gray text color */
+    color: #9C9583;
 }
 
 .container {
@@ -12,12 +12,12 @@ body {
     margin: auto;
     left: 0;
     right: 0;
-    background-color: #6A9C89; /* Pale Green for container background */
+    background-color: #6A9C89;
     top: 150px;
     padding: 30px 40px;
     border-radius: 1rem;
     border: none;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 ul {
@@ -30,10 +30,10 @@ li {
     padding: 15px;
     border-radius: 1rem;
     width: 100%;
-    background-color: #C4DAD2; /* Light Gray for list items */
-    color: #018f5b; /* Warm Gray text color for contrast */
+    background-color: #C4DAD2;
+    color: #018f5b;
     margin-bottom: 1.3rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .addtask input {
@@ -41,11 +41,11 @@ li {
     height: 5rem;
     border-radius: 1rem;
     border: none;
-    background-color: #E9EFEC; /* Soft Gray for input background */
+    background-color: #E9EFEC;
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
     padding-left: 1rem;
-    color: #013a1d; /* Warm Gray text color */
+    color: #013a1d;
 }
 
 .addtask button {
@@ -54,20 +54,45 @@ li {
     border-radius: 1rem;
     border: none;
     font-size: 1.2rem;
-    background-color: #018f5b; /* Warm Gray for button */
-    color: #ffffff; /* Light Beige for button text */
+    background-color: #018f5b;
+    color: #ffffff;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .addtask button:hover {
-    background-color: #cff8e3; /* Soft Gray on hover */
+    background-color: #cff8e3;
     color: #16423C;
 }
 
 .addtask input:focus {
     outline: none;
-    border-color: #CADBC8; /* Pale Green for input focus */
+    border-color: #CADBC8;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 70%;
+        top: 120px;
+        padding: 20px;
+    }
+
+    .addtask input {
+        width: calc(100% - 6rem);
+        height: 4rem;
+        font-size: 1rem;
+    }
+
+    .addtask button {
+        width: 4rem;
+        height: 4rem;
+        font-size: 1rem;
+    }
+
+    li {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
 }
 
 @media (max-width: 500px) {
