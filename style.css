@@ -18,7 +18,9 @@ body {
     border-radius: 1rem;
     border: none;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}h1 {
+}
+
+h1 {
     text-align: center;
     color: #ffffff;
     margin-top: 2rem;
@@ -50,7 +52,7 @@ li {
     color: #018f5b;
     margin-bottom: 1.3rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-   /* text-align: center; Center the text inside the list item*/
+   /* text-align: center; Center the text inside the list item */
 }
 
 .addtask input {
@@ -111,32 +113,78 @@ li {
         padding: 1rem;
         margin-bottom: 1rem;
     }
-    h1{
+
+    h1 {
         font-size: 2rem;
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 450px) {
     .container {
         width: 90%;
+        min-width: 90%;
+        padding: 20px;
         top: 100px;
-        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        margin-top: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
     }
 
     .addtask input {
-        width: calc(100% - 5.5rem);
-        height: 2.5rem;
+        width: calc(100% - 5rem);
+        height: 3.5rem;
         font-size: 1rem;
     }
 
     .addtask button {
-        width: 4rem;
-        height: 2.5rem;
+        width: 3.5rem;
+        height: 3.5rem;
         font-size: 1rem;
     }
 
     li {
         padding: 0.8rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .container {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+    }
+
+    .addtask input {
+        width: calc(100% - 4rem);
+        height: 2.5rem;
+        font-size: 0.8rem;
+    }
+
+    .addtask button {
+        width: 3rem;
+        height: 2.5rem;
+        font-size: 0.8rem;
+    }
+
+    li {
+        padding: 0.7rem;
+        margin-bottom: 0.7rem;
     }
 }
