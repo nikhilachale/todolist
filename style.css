@@ -18,17 +18,27 @@ body {
     border-radius: 1rem;
     border: none;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 2rem;
+    font-size: 3rem;
 }
-h1{
-text-align: center;
-color: #ffffff;
-margin-top: 5rem;
-font-size: 3rem;
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+    margin-top: 1rem;
 }
 
 ul {
     list-style: none;
     padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 li {
@@ -40,6 +50,7 @@ li {
     color: #018f5b;
     margin-bottom: 1.3rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+   /* text-align: center; Center the text inside the list item*/
 }
 
 .addtask input {
@@ -61,6 +72,7 @@ li {
     border: none;
     font-size: 1.2rem;
     background-color: #018f5b;
+    margin: auto;
     color: #ffffff;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -104,7 +116,7 @@ li {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 300px) {
     .container {
         width: 90%;
         top: 100px;

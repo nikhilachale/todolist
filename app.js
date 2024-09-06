@@ -1,6 +1,4 @@
 
-
-
 const task_ADD = () => {
     console.log("CLICKED");
     
@@ -55,21 +53,30 @@ const task_ADD = () => {
             const clearALL = document.createElement('button'); // Create the clear all button
             clearALL.textContent = 'Clear All';
             clearALL.id = 'clearAllButton';
-            clearALL.style.margin = 'auto';
-            clearALL.style.textAlign = 'center';
-            clearALL.style.marginLeft = '250px';
+            
+            // Style the button
             clearALL.style.backgroundColor = '#ffff';
             clearALL.style.borderRadius = '.5rem';
             clearALL.style.border = 'none';
             clearALL.style.height = '2rem';
             clearALL.style.width = '5rem';
+        
+            // Create a wrapper to center the button
+            const buttonWrapper = document.createElement('div');
+            buttonWrapper.style.display = 'flex';
+            buttonWrapper.style.justifyContent = 'center';
+            buttonWrapper.style.margin = '1rem 0'; // Add some margin for spacing
+        
+            buttonWrapper.appendChild(clearALL); // Add the button to the wrapper
+        
             clearALL.addEventListener('click', () => {
                 taskList.innerHTML = ''; // Clear all tasks
                 clearTasksFromLocalStorage(); // Clear tasks from local storage
-                clearALL.remove(); // Remove the clear all button
+                buttonWrapper.remove(); // Remove the clear all button and wrapper
             });
-            new_btn.appendChild(clearALL);
-        } 
+        
+            new_btn.appendChild(buttonWrapper); // Append the wrapper to the parent element
+        }
 
         newobj.appendChild(chkbtn); // Append the check button to the list item
         newobj.appendChild(delbtn); // Append the delete button to the list item
