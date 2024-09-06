@@ -34,6 +34,13 @@ h2 {
     margin-top: 1rem;
 }
 
+h4 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.3rem;
+    padding-bottom: 15px;
+}
+
 ul {
     list-style: none;
     padding: 20px;
@@ -116,6 +123,11 @@ li {
 
     h1 {
         font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    h4 {
+        font-size: 1rem; /* Adjust proportionally to h1 */
     }
 }
 
@@ -135,6 +147,11 @@ li {
     h2 {
         font-size: 1.5rem;
         margin-top: 0.5rem;
+    }
+
+    h4 {
+        font-size: 0.9rem; /* Adjust proportionally to h1 */
+        padding-bottom: 10px; /* Adjust padding if needed */
     }
 
     .addtask input {
@@ -169,6 +186,11 @@ li {
     h2 {
         font-size: 1.2rem;
         margin-top: 0.5rem;
+    }
+
+    h4 {
+        font-size: 0.8rem; /* Adjust proportionally to h1 */
+        padding-bottom: 8px; /* Adjust padding if needed */
     }
 
     .addtask input {
