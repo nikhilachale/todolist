@@ -4,21 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <title>ToDoList</title>
 </head>
 <body>
-    <div class="container">
-        <div class="addtask" id="newtask">
-            <input type="text" name="tasktoadd" id="task" placeholder="Add New Task">
-            <button id="push" onclick="task_ADD()">Add</button>
-        </div>
-        <div class="task-List">
-            <ul id="taskList"></ul>
-        </div>
-        <div class="btn" id='clear'>
-            
+    <div class="cont">
+        
+        <h1  >
+            To Do List
+        </h1>
+        <div class="container">
+        
+            <div class="addtask" id="newtask">
+                <input type="text" name="tasktoadd" id="task" placeholder="Add New Task">
+                <button id="push" onclick="task_ADD()">Add</button>
+            </div>
+            <div class="task-List">
+                <ul id="taskList"></ul>
+            </div>
+            <div class="btn" id='clear'>
+                
+            </div>
         </div>
     </div>
+   
     <script src="app.js"></script>
 </body>
 </html>
