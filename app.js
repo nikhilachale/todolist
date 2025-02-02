@@ -1,4 +1,22 @@
+const refreshTodo = () => {
+    const today = new Date().toISOString().split('T')[0]; // Get today's date in YYYY-MM-DD format
+    const lastDate = localStorage.getItem('lastDate'); // Retrieve last stored date
+
+    if (lastDate !== today) {
+        let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+        
+        // Remove each task from local storage
+        tasks.forEach(task => removeTaskFromLocalStorage(task));
+
+        // Update last date in localStorage
+        localStorage.setItem('lastDate', today);
+    }
+};
+
+refreshTodo();
+
 // Function to display date on page load
+
 const displaydate = () => {
     const d = new Date();
     const dd = d.getDate();
