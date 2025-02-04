@@ -3,13 +3,7 @@ const refreshTodo = () => {
     const lastDate = localStorage.getItem('lastDate'); // Retrieve last stored date
 
     if (lastDate !== today) {
-        let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
-        
-        // Remove each task from local storage
-        tasks.forEach(task => removeTaskFromLocalStorage(task));
-
-        // Update last date in localStorage
-        localStorage.setItem('lastDate', today);
+        removeTaskFromLocalStorage();
     }
 };
 
